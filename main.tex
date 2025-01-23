@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+\usepackage[margin=2cm,includeheadfoot,
+nomarginpar,]{geometry}
+
+%\usepackage{luacode}
+\usepackage{listings, listings-rust}
+
+\usepackage{authblk}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes, shadows}
+
+
+
+\usepackage{lipsum} % Dummy text for demonstration
+
+% Bibliography
+\usepackage[style=apa, parentracker=true]{biblatex}
+\addbibresource{myLibrary.bib}
+
+
+% Code Snippets Styling
+\definecolor{codegreen}{rgb}{2,10,0}
+\lstdefinestyle{test}{
+	captionpos=b,
+	backgroundcolor=\color{codegreen},
+}
+
+
+
+% Document Info
+\title{\LaTeX\ Template}
+\author[1]{Marco Ramos}
+\affil[1]{Coventry University, Coventry, UK}
+
+
+\begin{document}
+	% COVER PAGE
+	\input{coverpages/grid-template}
+	
+	% TITLE PAGE
+	\newpage
+	\restoregeometry		% Restore the default margins
+	\maketitle				% Create title
+	\thispagestyle{empty}	% Remove footnotes and headers
+	\vfill					% Push remaining text to the bottom of the page
+	\begin{center}
+		Made with \LaTeX
+	\end{center}
+	%Test \parencites{HowHashPassword}
+	
+	
+	% NEXT PAGES
+	\newpage
+		
+	\input{texsource/page-example}
+	
+	\input{texsource/code-example}
+	
+	% BIBLIOGRAPHY
+	\newpage
+	\printbibliography
+\end{document}
