@@ -6,7 +6,7 @@ nomarginpar,]{geometry}
 \usepackage{listings, listings-rust}
 
 \usepackage{authblk}
-\usepackage{xcolor}
+\usepackage{color, xcolor}
 \usepackage{tikz}
 \usetikzlibrary{shapes, shadows}
 
@@ -20,11 +20,52 @@ nomarginpar,]{geometry}
 
 
 % Code Snippets Styling
-\definecolor{codegreen}{rgb}{2,10,0}
-\lstdefinestyle{test}{
+\renewcommand\lstlistingname{Source Code}
+\renewcommand\lstlistlistingname{Source Code}
+
+\definecolor{codebg}{rgb}{0.11,0.12,0.13} % Dark background
+\definecolor{codebasic}{rgb}{0.73,0.74,0.76} % Dark background
+\definecolor{codecomment}{rgb}{0.44,0.45,0.47} % Gray for comments
+\definecolor{codestring}{rgb}{0.41,0.60,0.31} % Green for strings
+\definecolor{codekey1}{rgb}{0.97,0.33,0.39} % Red for keywords
+\definecolor{codekey2}{rgb}{0.20,0.13,0.79} % Red for keywords
+
+\lstdefinestyle{mystyle}{
+	language=Rust, 
+	backgroundcolor=\color{codebg},
+	basicstyle=\ttfamily\footnotesize\color{codebasic},
+	commentstyle=\color{codecomment}, 
+	stringstyle=\color{codestring},
+	keywordstyle=\bfseries,% reserved keywords
+	%keywordstyle=[2]\color{codekey2},% traits
+	%keywordstyle=[3]\color{codekey2},% primitive types
+	%keywordstyle=[4]\color{codekey2},% type and value constructors
+	keywordstyle=[5]\color{codekey1},% macros
+	%
+	breaklines=true,
+	breakatwhitespace=true, 
+	numbers=left,
+	firstnumber=auto,
+	numbersep=5pt,
+	tabsize=4,
+	xleftmargin=10pt,
+	showstringspaces=false,
+	showspaces=false,
+	showtabs=false,
+	columns=spaceflexible,
+	keepspaces=true,
+	frame=left,
+	framesep=5pt,
+	framerule=10pt,
+	rulecolor=\color[gray]{0.30},
+	mathescape=true,
 	captionpos=b,
-	backgroundcolor=\color{codegreen},
 }
+
+
+
+
+
 
 
 
@@ -48,6 +89,8 @@ nomarginpar,]{geometry}
 		Made with \LaTeX
 	\end{center}
 	%Test \parencites{HowHashPassword}
+	
+	\input{texsource/tabling}	
 	
 	
 	% NEXT PAGES
