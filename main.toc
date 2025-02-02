@@ -1,2 +1,0 @@
-\contentsline {section}{\numberline {1}Lorem Ipsum}{7}{}%
-\contentsline {section}{\numberline {2}Rust Code}{8}{}%
