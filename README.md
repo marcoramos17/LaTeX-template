@@ -2,11 +2,11 @@
 <div align="center">
   <!-- GitHub Profile Shield with Logo -->
   <a href="https://github.com/marcoramos17">
-    <img src="https://img.shields.io/badge/GitHub-Profile-181717?logo=github" alt="GitHub Profile"></a>
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?logo=github" alt="{GitHub} Profile"></a>
 
   <!-- LaTeX Template Shield -->
   <a href="https://marcoramos17.github.io/LaTeX-template/">
-    <img src="https://img.shields.io/badge/Preview-LaTeX%20Template-blue" alt="LaTeX Template Preview"></a>
+    <img src="https://img.shields.io/badge/Preview-LaTeX%20Template-blue?logo=latex" alt="{LaTeX Template} Preview"></a>
 </div>
 
 
