@@ -2,6 +2,13 @@
 <div align="center">
 [![LaTeX Template - Preview](https://img.shields.io/badge/LaTeX%20Template-Preview-blue)](https://marcoramos17.github.io/LaTeX-template/)
 </div>
+<div align="center">
+  <a href="https://yourwebsite.com">
+    <img src="https://img.shields.io/badge/LaTeX%20Template-Preview-blue" alt="LaTeX Template Preview">
+  </a>
+</div>
+
+
 
 # LaTeX Template Repository
 
