@@ -1,8 +1,8 @@
 # LaTeX-template
 <div align="center">
-  <!-- GitHub Profile Shield -->
+  <!-- GitHub Profile Shield with Logo -->
   <a href="https://github.com/marcoramos17">
-    <img src="https://img.shields.io/badge/GitHub-Profile-black" alt="My GitHub Profile">
+    <img src="https://img.shields.io/badge/GitHub-Profile-181717?logo=github" alt="GitHub Profile">
   </a>
 
   <!-- LaTeX Template Shield -->
