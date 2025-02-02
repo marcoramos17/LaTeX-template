@@ -1,9 +1,12 @@
 # LaTeX-template
 <div align="center">
-[![LaTeX Template - Preview](https://img.shields.io/badge/LaTeX%20Template-Preview-blue)](https://marcoramos17.github.io/LaTeX-template/)
-</div>
-<div align="center">
-  <a href="https://yourwebsite.com">
+  <!-- GitHub Profile Shield -->
+  <a href="https://github.com/marcoramos17">
+    <img src="https://img.shields.io/badge/GitHub-Profile-black" alt="My GitHub Profile">
+  </a>
+
+  <!-- LaTeX Template Shield -->
+  <a href="https://marcoramos17.github.io/LaTeX-template/">
     <img src="https://img.shields.io/badge/LaTeX%20Template-Preview-blue" alt="LaTeX Template Preview">
   </a>
 </div>
