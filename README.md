@@ -6,14 +6,14 @@
 
   <!-- LaTeX Template Shield -->
   <a href="https://marcoramos17.github.io/LaTeX-template/">
-    <img src="https://img.shields.io/badge/LaTeX%20Template-Preview-blue" alt="LaTeX Template Preview"></a>
+    <img src="https://img.shields.io/badge/Preview-LaTeX%20Template-blue" alt="LaTeX Template Preview"></a>
 </div>
 
 
 
 # LaTeX Template Repository
 
-Welcome to the LaTeX Template repository. This repository serves as a centralized template for creating and managing LaTeX documents efficiently, with support for customizable cover pages and project-specific branches.
+This repository serves as a centralized template for creating and managing LaTeX documents efficiently, with support for customizable cover pages and project-specific branches.
 
 ---
 
