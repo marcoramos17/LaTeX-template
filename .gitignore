@@ -13,6 +13,14 @@
 *.fls
 *.fdb_latexmk
 *.run.xml
+*.acn
+*.acr
+*.alg
+*.glg
+*.ist
+*.glo 
+*.gls
+
 
 # Ignore temporary and backup files
 *~

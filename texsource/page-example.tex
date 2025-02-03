@@ -1,7 +1,17 @@
-\directlua{tex.print("Hi there")}
-\section{TEST}
-HEYAAA
+\directlua{tex.print("Lua says: Hello World!")}
+\section{Formatting Text Examples}
+\begin{tcolorbox}[]
+Testing a colour box
+\end{tcolorbox}
+
+\begin{tcolorbox}[colback=red!5!white, colframe=red!50!black,
+	title=Fancy Colour Box]
+	\gls{ex} of testing another colour box\\
+	\gls{ex}
+\end{tcolorbox}
+
+This is a reference \parencites{SpaceSnifferFeatures}
 
 \section{Lorem Ipsum}
 
-\lipsum[1-5]
+\lipsum[1-3]

@@ -1,28 +1,33 @@
 \documentclass[a4paper]{article}
-\usepackage[margin=2cm,includeheadfoot,
-nomarginpar,]{geometry}
-
 %\usepackage{luacode}
-\usepackage{listings, listings-rust}
 
-\usepackage{authblk}
-\usepackage{color, xcolor}
-\usepackage{tikz}
+% Graphical Packages
+\usepackage[margin=2cm,includeheadfoot, nomarginpar,]{geometry}
+\usepackage{graphicx, fancyhdr, setspace}
+\usepackage{tikz, tcolorbox}
 \usetikzlibrary{shapes, shadows}
 
+% Maths Packages
+\usepackage{amsmath, amsfonts, amsthm}
 
+% Formatting Packages
+\usepackage{fontspec, titlesec}
+\usepackage[automake, acronym]{glossaries-extra}
+\usepackage{authblk, hyperref}
+\usepackage{color, xcolor}
+\usepackage{listings, listings-rust}
 
-\usepackage{lipsum} % Dummy text for demonstration
+% Glossary
+\setabbreviationstyle[acronym]{long-short}
+\newacronym{ex}{ex.}{example} %Creates an acronym for 'example', the writer will type 'ex', the displayed version will be 'ex.'
+% Other acronyms
+\makeglossaries
 
 % Bibliography
 \usepackage[style=apa, parentracker=true]{biblatex}
 \addbibresource{myLibrary.bib}
 
-
-% Code Snippets Styling
-\renewcommand\lstlistingname{Source Code}
-\renewcommand\lstlistlistingname{Source Code}
-
+% Colour Defining
 \definecolor{codebg}{rgb}{0.11,0.12,0.13} % Dark background
 \definecolor{codebasic}{rgb}{0.73,0.74,0.76} % Dark background
 \definecolor{codecomment}{rgb}{0.44,0.45,0.47} % Gray for comments
@@ -30,6 +35,10 @@ nomarginpar,]{geometry}
 \definecolor{codekey1}{rgb}{0.97,0.33,0.39} % Red for keywords
 \definecolor{codekey2}{rgb}{0.20,0.13,0.79} % Red for keywords
 
+% Code Snippets Styling
+% Note: Might want to swap listings for fancyvbr package
+\renewcommand\lstlistingname{Source Code}
+\renewcommand\lstlistlistingname{Source Code}
 \lstdefinestyle{mystyle}{
 	language=Rust, 
 	backgroundcolor=\color{codebg},
@@ -62,8 +71,31 @@ nomarginpar,]{geometry}
 	captionpos=b,
 }
 
+% Page Styling
+\usepackage{lipsum} % Dummy text for demonstration
+\pagestyle{fancy}
+\setmainfont{JetBrainsMono NF Medium}
+\newfontfamily\sectionfont{JetBrainsMono NF Bold}
 
+\titleformat{\section}
+{\sectionfont\bfseries\Large} % Bold and large font for sections
+{\thesection.}    % Section number (optional)
+{1em}             % Spacing between number and title
+{}
 
+\lhead{Marco Ramos}
+\rhead{Student ID: 10415201}
+\cfoot{\includegraphics[width=1cm]{img/coventry-phoenix.png}}
+\rfoot{> Page \thepage\ <}
+\onehalfspacing
+
+% Hyperlink Styling
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue, % Internal link colour
+	urlcolor=red, % External link colour
+	pdftitle={LaTeX Template}, % Title to display in PDF Readers
+	}
 
 
 % Document Info
@@ -77,27 +109,16 @@ nomarginpar,]{geometry}
 	\input{coverpages/grid-template}
 	
 	% TITLE PAGE
-	\newpage
-	\restoregeometry		% Restore the default margins
-	\maketitle				% Create title
-	\thispagestyle{empty}	% Remove footnotes and headers
-	\vfill					% Push remaining text to the bottom of the page
-	\begin{center}
-		Made with \LaTeX
-	\end{center}
-	%Test \parencites{HowHashPassword}
-	
+	\input{texsource/title-page}
+
+	% TABLING (Table of Contents, Lists of Figues/Tables/Source Code)
 	\input{texsource/tabling}	
 	
+	% CONTENT
+	\input{texsource/content-layout}
 	
-	% NEXT PAGES
-	\newpage
-		
-	\input{texsource/page-example}
-	
-	\input{texsource/code-example}
-	
-	% BIBLIOGRAPHY
+	% GLOSSARY & BIBLIOGRAPHY
+	\printglossary[type=\acronymtype]
 	\newpage
 	\printbibliography
 \end{document}
