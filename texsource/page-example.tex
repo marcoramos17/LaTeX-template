@@ -1,16 +1,34 @@
+\section{Formatting Examples}
 \directlua{tex.print("Lua says: Hello World!")}
-\section{Formatting Text Examples}
+
 \begin{tcolorbox}[]
-Testing a colour box
+	Testing a colour box
 \end{tcolorbox}
 
-\begin{tcolorbox}[colback=red!5!white, colframe=red!50!black,
+\begin{tcolorbox}[colback=blue!5!white, colframe=blue!50!black,
 	title=Fancy Colour Box]
 	\gls{ex} of testing another colour box\\
 	\gls{ex}
 \end{tcolorbox}
 
 This is a reference \parencites{SpaceSnifferFeatures}
+
+\section{tables}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|m{4cm}|}
+		\hline	\multicolumn{2}{|c|}{Table Example} \\% Merge columns
+		\hline	this & \cellcolor{blue!30} that \\
+		\hline	here & there is a whole lot of text in this other column, this is for testing purposes \\
+		\rowcolor{blue!38} \hline	controlled paragraph & \parbox{4cm}{This is \\ a text with \\ controlled paragraphs} \\
+		\hline	\multirow{2}{2cm}{merge} & don't merge \\ % {rows to merge}{width}{}
+		& don't merge either \\
+		\hline
+	\end{tabular}
+	\caption{An example of a table}
+\end{table}
+
 
 \section{Lorem Ipsum}
 

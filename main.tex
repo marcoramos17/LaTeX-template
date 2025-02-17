@@ -13,7 +13,7 @@
 % Formatting Packages
 \usepackage{fontspec, titlesec}
 \usepackage[automake, acronym]{glossaries-extra}
-\usepackage{authblk, hyperref}
+\usepackage{authblk, hyperref, float, array, multirow, colortbl}
 \usepackage{color, xcolor}
 \usepackage{listings, listings-rust}
 
@@ -74,6 +74,12 @@
 % Page Styling
 \usepackage{lipsum} % Dummy text for demonstration
 \pagestyle{fancy}
+
+% Table Styling
+\setlength{\tabcolsep}{18pt} % Gap before text
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+\setlength{\arrayrulewidth}{0.5mm} % Thickness of the table borders
+% \arrayrulecolor{blue}		%set border colour. Requires package [table]{xcolor} 
 
 % Font Styling
 \setmainfont{JetBrainsMono NF Medium}
