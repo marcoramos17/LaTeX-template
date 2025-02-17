@@ -1,0 +1,30 @@
+% Page Styling
+\usepackage{lipsum} % Dummy text for demonstration
+\pagestyle{fancy}
+
+% Table Styling
+\setlength{\tabcolsep}{18pt} % Gap before text
+\renewcommand{\arraystretch}{1.5} % Cell height scaling
+\setlength{\arrayrulewidth}{0.5mm} % Thickness of the table borders
+% \arrayrulecolor{blue}		%set border colour. Requires package [table]{xcolor} 
+
+% Font Styling
+\setmainfont{JetBrainsMono NF Medium}
+\newfontfamily\sectionfont{JetBrainsMono NF Bold}
+\sloppy
+
+
+% Header & Footer Styling
+\lhead{Marco Ramos}
+\rhead{Student ID: 10415201}
+\cfoot{\includegraphics[width=1cm]{img/coventry-phoenix.png}}
+\rfoot{> Page \thepage\ <}
+\onehalfspacing
+
+% Hyperlink Styling
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue, % Internal link colour
+	urlcolor=red, % External link colour
+	pdftitle={LaTeX Template}, % Title to display in PDF Readers
+}
