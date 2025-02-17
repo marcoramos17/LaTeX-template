@@ -4,6 +4,7 @@
 {1em}             % Spacing between number and title
 {\_}
 
+
 % --- Define a "chapter‐like" section style ---
 % You can mimic the report/book chapter look by using the display shape,
 % a big title, rules, and even a “Chapter” word.
@@ -26,6 +27,12 @@
 	\titleformat{\subsection}
 	{\sectionfont\bfseries\Large} % Bold and large font for sections
 	{\thesubsection.}    % Section number (optional)
+	{1em}             % Spacing between number and title
+	{\_}
+	
+	\titleformat{\subsubsection}
+	{\sectionfont\bfseries\large} % Bold and large font for sections
+	{\thesubsubsection.}    % Section number (optional)
 	{1em}             % Spacing between number and title
 	{\_}
 }
