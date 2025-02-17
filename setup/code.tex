@@ -1,0 +1,35 @@
+% Code Snippets Styling
+% Note: Might want to swap listings for fancyvbr package
+\renewcommand\lstlistingname{Source Code}
+\renewcommand\lstlistlistingname{Source Code}
+\lstdefinestyle{mystyle}{
+	language=Rust, 
+	backgroundcolor=\color{codebg},
+	basicstyle=\ttfamily\footnotesize\color{codebasic},
+	commentstyle=\color{codecomment}, 
+	stringstyle=\color{codestring},
+	keywordstyle=\bfseries,% reserved keywords
+	%keywordstyle=[2]\color{codekey2},% traits
+	%keywordstyle=[3]\color{codekey2},% primitive types
+	%keywordstyle=[4]\color{codekey2},% type and value constructors
+	keywordstyle=[5]\color{codekey1},% macros
+	%
+	breaklines=true,
+	breakatwhitespace=true, 
+	numbers=left,
+	firstnumber=auto,
+	numbersep=5pt,
+	tabsize=4,
+	xleftmargin=10pt,
+	showstringspaces=false,
+	showspaces=false,
+	showtabs=false,
+	columns=spaceflexible,
+	keepspaces=true,
+	frame=left,
+	framesep=5pt,
+	framerule=10pt,
+	rulecolor=\color[gray]{0.30},
+	mathescape=true,
+	captionpos=b,
+}
