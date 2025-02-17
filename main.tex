@@ -4,9 +4,13 @@
 \input{setup/packages}
 \input{setup/colours}
 \input{setup/code}
-\input{setup/special}
 \input{setup/styling}
 \input{setup/titles}
+
+% Bibliography
+\usepackage[style=apa, parentracker=true]{biblatex}
+\addbibresource{myLibrary.bib}
+
 
 % Document Info
 \title{\LaTeX\ Template}
@@ -19,20 +23,16 @@
 	\input{coverpages/grid-template}
 	
 	% TITLE PAGE
-	\input{texsource/title-page}
-	
-	% DECLARATION
-	%\justifying
-	\input{src/declaration}
+	\input{texbase/title-page}
 	
 	% ABSTRACT
-	\input{texsource/abstract}
+	\input{src/abstract}
 
 	% TABLING (Table of Contents, Lists of Figues/Tables/Source Code)
-	\input{texsource/tabling}	
+	\input{texbase/tabling}	
 
 	% CONTENT
-	\input{texsource/content-layout}
+	\input{texbase/content-layout}
 	
 	% GLOSSARY & BIBLIOGRAPHY
 	\printglossary[type=\acronymtype]
